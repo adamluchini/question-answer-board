@@ -1,7 +1,8 @@
 <h1>question page</h1>
 {{question-detail question=model.question destroyQuestion="destroyQuestion"}}
+<br>
 {{update-question question=model.question update="update"}}
-
+<br>
 {{new-answer saveAnswer="saveAnswer" question=model.question}}
 
 {{#each model.question.answers as |answer|}}
