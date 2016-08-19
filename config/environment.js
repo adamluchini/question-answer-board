@@ -5,7 +5,7 @@ module.exports = function(environment) {
     firebase: {
       apiKey: 'AIzaSyCAfn2KMIa_5aE8nFvrZYo7LpuuGy_nG14',
       authDomain: 'question-board-c41ee.firebaseapp.com',
-      databaseURL: 'https://blog-d8eb2.firebaseio.com',
+      databaseURL: 'https://question-board-c41ee.firebaseio.com',
       storageBucket: 'question-board-c41ee.appspot.com',
     },
     modulePrefix: 'question-answer-board',
