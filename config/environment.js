@@ -2,17 +2,18 @@
 
 module.exports = function(environment) {
   var ENV = {
+    firebase: {
+      apiKey: 'AIzaSyCAfn2KMIa_5aE8nFvrZYo7LpuuGy_nG14',
+      authDomain: 'question-board-c41ee.firebaseapp.com',
+      databaseURL: 'https://blog-d8eb2.firebaseio.com',
+      storageBucket: 'question-board-c41ee.appspot.com',
+    },
     modulePrefix: 'question-answer-board',
     environment: environment,
-    firebase: {
-    apiKey: 'AIzaSyCAfn2KMIa_5aE8nFvrZYo7LpuuGy_nG14',
-    authDomain: 'https://question-board-c41ee.firebaseio.com',
-    databaseURL: 'https://blog-d8eb2.firebaseio.com',
-    storageBucket: 'question-board-c41ee.appspot.com',
-  },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
+
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
