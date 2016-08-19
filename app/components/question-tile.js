@@ -6,7 +6,7 @@ export default Ember.Component.extend({
     if (length === 1) {
       return length + ' answer';
     } else if (length === 0) {
-      return "no answers yet!";
+      return "0 answers";
     }
     else {
       return length + ' answers';
