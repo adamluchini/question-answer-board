@@ -43,5 +43,8 @@
     "emberfire": "2.0.1",
     "firebase": "3.3.0",
     "loader.js": "^4.0.1"
+  },
+  "dependencies": {
+    "moment": "^2.14.1"
   }
 }
