@@ -6,7 +6,7 @@ export default Ember.Component.extend({
 
   actions: {
     favoriteButtonShow() {
-      this.set('addToFavorites', false)
+      this.set('addToFavorites', false);
     },
   addToFavorites(answer) {
     this.get('favorites').add(answer);

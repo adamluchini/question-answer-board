@@ -5,5 +5,5 @@
 {{#if addToFavorites}}
   <p>This answer has been favorited!</p>
   {{else}}
-  <button {{action 'addToFavorites' answer}}{{action 'favoriteButtonShow'}} class="btn btn-success btn-lg">Favorite</button>
+  {{#link-to 'favorite-answers'}}<button {{action 'addToFavorites' answer}}{{action 'favoriteButtonShow'}} class="btn btn-success btn-lg">Favorite</button>{{/link-to}}
 {{/if}}
