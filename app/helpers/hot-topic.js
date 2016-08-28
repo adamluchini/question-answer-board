@@ -5,7 +5,7 @@ export function hotTopic(params) {
 
   if(question.get('answers').get('length') > 6) {
     return Ember.String.htmlSafe('<span class="glyphicon glyphicon-fire"></span> <span class="glyphicon glyphicon-fire"></span> <span class="glyphicon glyphicon-fire"></span>');
-  } else if(question.get('answers').get('length') > 1) {
+  } else if(question.get('answers').get('length') > 0) {
     return Ember.String.htmlSafe('<span class="glyphicon glyphicon-fire"></span>');
   } else {
     return Ember.String.htmlSafe('<span class="glyphicon glyphicon-ice-lolly"></span>');

@@ -21,6 +21,10 @@ export default Ember.Route.extend({
       question.destroyRecord();
       this.transitionTo('index');
     },
+    upvote(answer) {
+      answer.set('votes', answer.get('votes') + 1);
+      answer.save();
+    },
     saveAnswer(params) {
       var newAnswer = this.store.createRecord('answer', params);
       var question = params.question;

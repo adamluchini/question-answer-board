@@ -8,8 +8,11 @@ export default Ember.Component.extend({
     favoriteButtonShow() {
       this.set('addToFavorites', false);
     },
-  addToFavorites(answer) {
-    this.get('favorites').add(answer);
+    addToFavorites(answer) {
+      this.get('favorites').add(answer);
     },
+    upvote(answer) {
+      this.sendAction('upvote', answer);
+    }
   }
 });
