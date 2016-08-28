@@ -1,11 +1,8 @@
 <h3>{{answer.author}} says:</h3>
 <p>{{answer.body}}</p>
 
-
-{{#if addToFavorites}}
-  <p>This answer has been favorited!</p>
-  {{else}}
-  {{#link-to 'favorite-answers'}}<button {{action 'addToFavorites' answer}}{{action 'favoriteButtonShow'}} class="btn btn-success btn-lg">Favorite</button>{{/link-to}} {{upvote-answer answer=answer upvote="upvote"}}
-  <p>Upvote count:{{answer.votes}}</p>
-
-{{/if}}
+{{#link-to 'favorite-answers'}}<button {{action 'addToFavorites' answer}}{{action 'favoriteButtonShow'}} class="btn btn-success btn-lg">Favorite</button>{{/link-to}}
+<br>
+{{upvote-answer answer=answer upvote="upvote"}}
+<br>
+<p>Upvote count:{{answer.votes}}</p>
